@@ -4,4 +4,5 @@
 
 ## Run Web Server 
 
-run `sh server.sh`
+`sh server.sh`
+`http://localhost:4000`
