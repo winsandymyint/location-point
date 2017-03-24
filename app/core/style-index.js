@@ -27,6 +27,11 @@ function init() {
         name: "Map Style"
     });
     new AutocompleteDirectionsHandler(map);
+    var search_box = document.getElementsByClassName('map-search');
+    var searchBarHeight = document.getElementById('sticker').offsetHeight;
+    var stickyHeaderHeight = document.getElementById('sticker-sticky-wrapper').offsetHeight;
+    var map_container = document.getElementById('map-top');
+    
     map.mapTypes.set("map_style", r);
     map.setMapTypeId("map_style");
     google.maps.event.addListener(map, "bounds_changed", function() {
@@ -34,8 +39,8 @@ function init() {
     });
     n = getBoundsFromCookie();
     n && (map.setZoom(n.z), map.setCenter(n.c));
-    t = new google.maps.places.Autocomplete($("#map-location-search")[0]);
-    t.bindTo("bounds", map);
+    // t = new google.maps.places.Autocomplete($("#map-location-search")[0]);
+    // t.bindTo("bounds", map);
     google.maps.event.addListener(t, "place_changed", function() {
         var n = t.getPlace();
         n.geometry && (n.geometry.viewport ? map.fitBounds(n.geometry.viewport) : map.setCenter(n.geometry.location), setBoundsCookie(map))
@@ -53,7 +58,6 @@ function init() {
     })
 }
 function AutocompleteDirectionsHandler(map) {
-	console.log("MAP", map)
     this.map = map;
     this.originPlaceId = null;
     this.destinationPlaceId = null;

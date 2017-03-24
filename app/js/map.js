@@ -17,6 +17,7 @@ function initMap() {
     var map_container = document.getElementById('map-top');
     var map_container_height = windowHeight - searchBarHeight - stickyHeaderHeight; 
     map_container.style.height = map_container_height+"px";
+    console.log('awefkjwe')
     new AutocompleteDirectionsHandler(map);
 }
 
@@ -24,6 +25,7 @@ function initMap() {
  * @constructor
  */
 function AutocompleteDirectionsHandler(map) {
+    console.log("WEJFKJWEKLJFKLJEFLK")
     this.map = map;
     this.originPlaceId = null;
     this.destinationPlaceId = null;
