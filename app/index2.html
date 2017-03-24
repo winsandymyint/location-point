@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html class="js flash hiddenscroll" lang="en" data-baseurl="/" style="">
+    <!--<![endif]-->
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            <style type="text/css">.gm-style .gm-style-cc span,.gm-style .gm-style-cc a,.gm-style .gm-style-mtc div{font-size:10px}</style><style type="text/css">@media print {  .gm-style .gmnoprint, .gmnoprint {    display:none  }}@media screen {  .gm-style .gmnoscreen, .gmnoscreen {    display:none  }}</style><style type="text/css">.gm-style{font-family:Roboto,Arial,sans-serif;font-size:11px;font-weight:400;text-decoration:none}.gm-style img{max-width:none}</style><style type="text/css">.pac-container{background-color:#fff;position:absolute!important;z-index:1000;border-radius:2px;border-top:1px solid #d9d9d9;font-family:Arial,sans-serif;box-shadow:0 2px 6px rgba(0,0,0,0.3);-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box;overflow:hidden}.pac-logo:after{content:"";padding:1px 1px 1px 0;height:16px;text-align:right;display:block;background-image:url(https://maps.gstatic.com/mapfiles/api-3/images/powered-by-google-on-white3.png);background-position:right;background-repeat:no-repeat;background-size:120px 14px}.hdpi.pac-logo:after{background-image:url(https://maps.gstatic.com/mapfiles/api-3/images/powered-by-google-on-white3_hdpi.png)}.pac-item{cursor:default;padding:0 4px;text-overflow:ellipsis;overflow:hidden;white-space:nowrap;line-height:30px;text-align:left;border-top:1px solid #e6e6e6;font-size:11px;color:#999}.pac-item:hover{background-color:#fafafa}.pac-item-selected,.pac-item-selected:hover{background-color:#ebf2fe}.pac-matched{font-weight:700}.pac-item-query{font-size:13px;padding-right:3px;color:#000}.pac-icon{width:15px;height:20px;margin-right:7px;margin-top:6px;display:inline-block;vertical-align:top;background-image:url(https://maps.gstatic.com/mapfiles/api-3/images/autocomplete-icons.png);background-size:34px}.hdpi .pac-icon{background-image:url(https://maps.gstatic.com/mapfiles/api-3/images/autocomplete-icons_hdpi.png)}.pac-icon-search{background-position:-1px -1px}.pac-item-selected .pac-icon-search{background-position:-18px -1px}.pac-icon-marker{background-position:-1px -161px}.pac-item-selected .pac-icon-marker{background-position:-18px -161px}.pac-placeholder{color:gray}</style>
+        
+        <title>
+            Location Point - Find your way route
+        </title>
+
+        <link rel="shortcut icon" type="image/x-icon" href="core/favicon.ico">
+        <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        
+        <meta name="viewport" content="width=device-width">
+        <meta property="fb:page_id" content="214560802049588">
+        <meta property="og:title" content="Location Point - Free Styles for Google Maps">
+        <meta property="og:site_name" content="Location Point">
+        <meta property="og:description" content="Location Point is a repository of different color schemes for Google Maps aimed towards web designers and developers.">
+        <meta property="og:image" content="facebook.png">
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:title" content="Location Point - Google Maps">
+        <meta name="twitter:description" content="Location Point is a repository of different color schemes for Google Maps aimed towards web designers and developers.">
+        <meta name="twitter:image" content="twitter.png">
+        <link href="core/font-style.css" rel="stylesheet" type="text/css">
+        <link href="core/custom.css" rel="stylesheet">
+        <link href="core/default.min.css" rel="stylesheet">            
+        <script src="core/jquery.min.js"></script>
+        <script>(window.jQuery)||document.write('<script src="/js/jquery"><\/script>');</script>
+            <script src="core/extend.js"></script>
+        </script>
+        <script type="text/javascript" src="core/custom.js"></script>
+        <script src="core/style-index.js"></script>
+<!--         <link rel="stylesheet" type="text/css" href="../css/style.css">  -->
+<style type="text/css" media="screen">
+    .map-search .map-search-fields {
+        position: relative;
+    }
+    .map-search .map-search-fields .field {
+        margin-bottom: 13px;
+        width: 96%;
+    }
+    .map-search .map-search-fields .field .fa {
+        position: absolute;
+        left: 18px;
+        top: 10px;
+        color: #999;
+        z-index: 99;
+    }
+    .map-search .map-search-fields .field input {
+        position: relative;
+        padding: 13px 16px;
+        margin-bottom: 0;
+        height: 35px;
+        width: 20%;
+        text-transform: uppercase;
+        font-size: 12px;
+        font-weight: 600;
+    }
+    .map-search .map-search-fields .field input.location {
+        padding-left: 36px;
+    }
+</style>
+    </head>
+    <body class="fullscreen fullscreen-scrollable nav-full-width detail  showads">
+        <header class="navbar navbar-inverse navbar-static-top">
+        <div class="container-fluid container-max-width">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand clearfix" href="#">
+                    <span class="brand-icon">
+                        <img src="core/logo.svg" alt="Location Point">
+                    </span>
+                    <span class="brand-text">
+                        <img src="core/Logo-text.png" alt="Location Point" style="margin-left: 20px">
+                    </span>
+                </a>
+            </div>
+            <nav class="navbar-collapse collapse" data-disable-focus-out="true">
+                <div class="navbar-left">
+                    <ul class="nav navbar-nav">
+                            <li class="">
+                            </li>
+                    </ul>
+                </div>
+                <div class="navbar-right">
+                    <ul class="nav navbar-nav">
+                        <li class="user-account">
+                            <a class="register-link" href="https://github.com/winsandymyint/location-point">Github</a>
+                            <a class="login-link" href="https://www.linkedin.com/in/win-sandy-myint-b9b81964/">Link in</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        </header>
+
+        <main class="body-container" role="main">
+
+            <div id="side-controls" class="collapse flex flex-dir-col active">
+                <button type="button" class="control flex-item-grow toggler" style="width: 50px;">
+                    <i class="fa fa-angle-double-right fa-3" aria-hidden="true" style="color: #00b7fb; font-size: 20px;"></i>
+                </button>
+            </div>
+
+            <!-- <div id="editor-map" id="map" class="map" style="overflow: hidden;">
+            </div>
+             -->
+            <div id="map-top">
+                <div id="editor-map" class="map"></div>
+            </div>
+
+            <div id="side-menu" class="col-panel full-width active">
+                <div class="col-panel-content flex flex-dir-col">
+                    <section class="content-set content-padded flex-item-grow flex flex-dir-col">
+                        <h1 class="media media-row-padded no-margin flex-item">
+                            <span class="name media-body no-margin">Find your own way!</span>
+                            
+                        </h1>
+
+                        <div class="map-search container">
+                           <div class="row">
+                               <div class="col-md-12">
+                                   <div class="map-search-fields">
+                                       <div class="field location">
+                                           <i class="fa fa-map-marker"></i>
+                                           <input type="text" name="Pickup Location" id="origin-input" placeholder="Pickup Location" class="location" autocomplete="off">
+                                       </div>
+                                   </div>
+                                   <div class="map-search-fields">
+                                       <div class="field location">
+                                           <i class="fa fa-map-marker"></i>
+                                           <input type="text" name="Dropoff Location" id="destination-input" placeholder="Dropoff Location" class="location" autocomplete="off">
+                                       </div>
+                                   </div>
+                                   <div class="search-button">
+                                       <button class="btn btn-medium btn-info home-search-button" id="changemode-driving" style="background: #00b7fb">Search Now</button>
+                                   </div>
+                               </div>
+                           </div>
+                         </div>
+                    </section>
+                </div>
+            </div>
+        </main>
+
+    <script src="../js/map.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCTuJrUXmrjChHtzRI6NLVi-X39r4gE8go&libraries=places&callback=initMap"
+        async defer></script>     
+</body></html>
