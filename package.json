@@ -1,0 +1,27 @@
+{
+  "name": "location-point",
+  "version": "1.0.0",
+  "description": "This is the location point application",
+  "main": "index.js",
+  "dependencies": {
+    "body-parser": "1.13.1",
+    "express": "4.13.0",
+    "fuse.js": "^2.6.2",
+    "nodemon": "^1.11.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon /scripts/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/winsandymyint/location-point.git"
+  },
+  "author": "Win Sandy Myint",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/winsandymyint/location-point/issues"
+  },
+  "homepage": "https://github.com/winsandymyint/location-point#readme"
+}

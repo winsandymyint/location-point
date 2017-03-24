@@ -1,0 +1,45 @@
+<html>
+    <head>
+        <title>Location Point</title>
+        <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="../css/style.css">
+    </head>
+    <body>
+        <div class="header-nav" id="sticker-sticky-wrapper">
+            <div class="container">
+                <span id="site_title">Location Point</span>      
+            </div>
+        </div>
+        <div id="map-top">
+            <div id="map"></div>
+        </div>
+        <div class="header-nav" id="sticker">
+             <div class="map-search container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="map-search-fields">
+                            <div class="field location">
+                                <i class="fa fa-map-marker"></i>
+                                <input type="text" name="Pickup Location" id="origin-input" placeholder="Pickup Location" class="location" autocomplete="off">
+                            </div>
+                        </div>
+                        <div class="map-search-fields">
+                            <div class="field location">
+                                <i class="fa fa-map-marker"></i>
+                                <input type="text" name="Dropoff Location" id="destination-input" placeholder="Dropoff Location" class="location" autocomplete="off">
+                            </div>
+                        </div>
+                        <div class="search-button">
+                            <button class="btn btn-medium btn-primary home-search-button" id="changemode-driving">Search Now</button>
+                        </div>
+                    </div>
+                </div>
+              </div>
+        </div>
+        <script src="../js/map.js"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCTuJrUXmrjChHtzRI6NLVi-X39r4gE8go&libraries=places&callback=initMap"
+            async defer></script>
+    </body>
+</html>
